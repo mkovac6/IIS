@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PredavacArray>
+	<PredavacList>
+		<Predavac>
+			<Id>string</Id>
+			<Type>string</Type>
+			<Name>string</Name>
+			<Placa>1254987365412.2</Placa>
+		</Predavac>
+		<Predavac>
+			<Id>string</Id>
+			<Type>string</Type>
+			<Name>string</Name>
+			<Placa>9754761234872.2</Placa>
+		</Predavac>
+	</PredavacList>
+</PredavacArray>
