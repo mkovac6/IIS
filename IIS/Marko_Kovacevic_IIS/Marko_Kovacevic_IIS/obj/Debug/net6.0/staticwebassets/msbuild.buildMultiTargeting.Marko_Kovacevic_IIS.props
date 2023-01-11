@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Marko_Kovacevic_IIS.props" />
+</Project>
