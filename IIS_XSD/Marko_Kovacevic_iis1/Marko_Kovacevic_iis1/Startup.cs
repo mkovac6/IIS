@@ -29,21 +29,21 @@ namespace Marko_Kovacevic_iis1
                     Id = "1",
                     Type = "Visi predavac",
                     Name = "Marko",
-                    Placa = 8000
+                    Placa = 8000.05
                 },
                 new PredavacArray
                 {
                     Id = "1",
                     Type = "Voditelj studija",
                     Name = "Ana",
-                    Placa = 10000
+                    Placa = 10000.455
                 },
                 new PredavacArray
                 {
                     Id = "1",
                     Type = "Predavac",
                     Name = "Maja",
-                    Placa = 7000
+                    Placa = 7000.69
                 }
             };
         }

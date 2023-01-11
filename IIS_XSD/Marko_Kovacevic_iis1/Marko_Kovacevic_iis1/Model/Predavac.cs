@@ -26,7 +26,7 @@ namespace Marko_Kovacevic_iis1.Model
         [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model")]*/
         /*public class Predavac
         {
-            public Predavac(string id, string type, string name, decimal placa)
+            public Predavac(string id, string type, string name, double placa)
             {
                 Id = id;
                 Type = type;
@@ -44,7 +44,7 @@ namespace Marko_Kovacevic_iis1.Model
             [DataMember(Order = 2)]
             public string Name { get; set; }
             [DataMember(Order = 3)]
-            public decimal Placa { get; set; }
+            public double Placa { get; set; }
         //}
     }
 }

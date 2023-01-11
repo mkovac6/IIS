@@ -18,7 +18,7 @@
 										<xs:element name="Id" type="xs:string" />
 										<xs:element name="Type" type="xs:string" />
 										<xs:element name="Name" type="xs:string" />
-										<xs:element name="Placa" type="xs:decimal" />
+										<xs:element name="Placa" type="xs:double" />
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
