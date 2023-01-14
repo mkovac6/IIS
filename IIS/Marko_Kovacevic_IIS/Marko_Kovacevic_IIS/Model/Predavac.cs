@@ -18,9 +18,9 @@ namespace Marko_Kovacevic_iis.Model
 
         }
 
-        public PredavacArray(List<Predavac> shopItemList)
+        public PredavacArray(List<Predavac> predavacList)
         {
-            PredavacList = PredavacList;
+            PredavacList = predavacList;
         }
 
         [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model")]
