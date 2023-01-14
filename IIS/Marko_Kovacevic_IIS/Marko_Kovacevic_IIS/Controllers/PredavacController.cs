@@ -1,4 +1,5 @@
-﻿using Marko_Kovacevic_iis.Model;
+﻿using Commons.Xml.Relaxng;
+using Marko_Kovacevic_iis.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.SwaggerGen;
@@ -64,6 +65,46 @@ namespace Marko_Kovacevic_iis.Controllers
 
                 return false;
             }
+        }
+
+        [HttpPost("validate-rng")]
+        public bool ValidateWithRng(XmlElement predavacArray)
+        {
+            XmlDocument docXml = predavacArray.OwnerDocument;
+            docXml.AppendChild(predavacArray);
+            var errors = false;
+            XmlReader xml = new XmlNodeReader(docXml);
+            XmlReader rng = XmlReader.Create(Path.GetFullPath("predavac_rng.rng"));
+            using (var reader = new RelaxngValidatingReader(xml, rng))
+            {
+                reader.InvalidNodeFound += (source, message) =>
+                {
+                    Console.WriteLine("Error: " + message);
+                    errors = true;
+                    return true;
+                };
+                XDocument doc = XDocument.Load(reader);
+            }
+
+            if (errors)
+            {
+                return false;
+            }
+            else
+            {
+                DataContractSerializer deserijalizacija = new DataContractSerializer(typeof(PredavacArray));
+                MemoryStream xmlStream = new MemoryStream();
+                docXml.Save(xmlStream);
+                xmlStream.Position = 0;
+                PredavacArray predArray = (PredavacArray)deserijalizacija.ReadObject(xmlStream);
+
+                foreach (var item in predArray.PredavacList)
+                {
+                    Startup.PredavacArray.PredavacList.Add(item);
+                }
+                return true;
+            }
+
         }
     }
 }

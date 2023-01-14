@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tir9XlyLpVZoId0l1lV4GvKxpd0meZesYfrnTbRFxvnU8M9kbc+VPAXiXGtiInG962ZHSOO4xJVIsH5XVnJekw==",
+  "dgSpecHash": "rX7zBs3efsDGLInTbmtL1EUOQ9o86/UpK/JEvigFMJT+F2e8H37Mj1LOEn1l5XmMwFageyORJLinMOD7Y0m4sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marko\\Desktop\\IIS\\Marko_Kovacevic_IIS\\Marko_Kovacevic_IIS\\Marko_Kovacevic_IIS.csproj",
+  "projectFilePath": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_IIS\\Marko_Kovacevic_IIS\\Marko_Kovacevic_IIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marko\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\marko\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
