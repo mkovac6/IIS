@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/marko/Desktop/JAXBIIS/Marko_Kovacevic_JAXBIIS/../../School/IIS/IIS/Marko_Kovacevic_IIS/Marko_Kovacevic_IIS/predavac_schema.xsd" uri="xml-resources/jaxb/predavacBinding/predavac_schema.xsd"/>
+</catalog>
