@@ -30,10 +30,10 @@ public class XML_RPC {
 
             List<Grad> listaGradova = new ArrayList<>();
 
-            for(int i = 0; i < nodeList.getLength(); i++) {
+            for (int i = 0; i < nodeList.getLength(); i++) {
                 Node gradNode = nodeList.item(i);
 
-                if(gradNode.getNodeType() == Node.ELEMENT_NODE) {
+                if (gradNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element gradElement = (Element) gradNode;
 
                     String gradString = gradElement
@@ -60,9 +60,9 @@ public class XML_RPC {
             }
 
 
-            System.out.println("Spajanje na DHMZ je bilo uspješno!");
+            System.out.println("Uspjesno spojeno na DHMZ stranicu!");
         } catch (Exception ex) {
-            System.out.println("Došlo je do pogreške kod spajanja na DHMZ!");
+            System.out.println("GRESKA, ne uspjesno spajanje na DHMZ stranicu!");
             Logger.getLogger(XML_RPC.class.getName()).
                     log(Level.SEVERE, null, ex);
         }
