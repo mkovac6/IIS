@@ -26,9 +26,6 @@ public class XML_RPC {
 
             Document xmlDocument = parser.parse(gradoviStream);
 
-            String parentNodeName =
-                    xmlDocument.getDocumentElement().getNodeName();
-
             NodeList nodeList = xmlDocument.getElementsByTagName("Grad");
 
             List<Grad> listaGradova = new ArrayList<>();
