@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6g3CfjxzUPDPUqWlUu8+4bA7k81CVJKH7Z+rFWJKxMrvpAjW3yvqTBlPZ7MuCT9XuiCZz3pp1LIVnNP0QH7erg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marko\\Downloads\\jumpstartCS-rabbitmq-csharp-master\\1-First-RabbitMQ-App\\Consumer\\Consumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marko\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\marko\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\marko\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
