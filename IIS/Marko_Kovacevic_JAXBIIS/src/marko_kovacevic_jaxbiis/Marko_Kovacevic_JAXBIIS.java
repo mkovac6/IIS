@@ -40,7 +40,7 @@ public class Marko_Kovacevic_JAXBIIS {
                 client = socket.accept();
                 Scanner scanner = new Scanner(client.getInputStream());
                 PrintWriter writer = new PrintWriter(client.getOutputStream(), true);
-                String xsd = "\"C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_IIS\\Marko_Kovacevic_IIS\\predavac_schema.xsd\"";
+                String xsd = "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_IIS\\Marko_Kovacevic_IIS\\predavac_schema.xsd";
 
                 String xmlName = scanner.nextLine();
                 JAXBContext jaxbContext;

@@ -36,7 +36,7 @@ namespace SOAPIIS
             predArray.PredavacList = predavacList;
 
             DataContractSerializer dcs = new DataContractSerializer(typeof(PredavacArray));
-            string path = @"C:\Users\marko\Desktop\School\IIS\IIS\Marko_Kovacevic_IIS\Marko_Kovacevic_IIS\Predavac.xml";
+            string path = @"C:\Users\marko\Desktop\School\IIS\IIS\Marko_Kovacevic_IIS\Marko_Kovacevic_IIS\PredavacSOAP.xml";
             using (FileStream fs = new FileStream(path, FileMode.Create))
             {
                 dcs.WriteObject(fs, predArray);

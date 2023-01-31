@@ -1,1 +1,30 @@
-<PredavacArray xmlns="http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><PredavacList><PredavacArray.Predavac><Id>1</Id><Type>Visi predavac</Type><Name>Marko</Name><Placa>8000.145</Placa></PredavacArray.Predavac><PredavacArray.Predavac><Id>2</Id><Type>Nositelj kolegija</Type><Name>Ana</Name><Placa>10000.177</Placa></PredavacArray.Predavac><PredavacArray.Predavac><Id>3</Id><Type>Predavac</Type><Name>Marta</Name><Placa>14784.4154</Placa></PredavacArray.Predavac></PredavacList></PredavacArray>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<PredavacArray xmlns="http://schemas.datacontract.org/2004/07/Marko_Kovacevic_IIS.Model" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.datacontract.org/2004/07/Marko_Kovacevic_IIS.Model schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PredavacList>
+    <Predavac>
+      <Id>string</Id>
+      <Type>string</Type>
+      <Name>string</Name>
+      <Placa>-26200299999999.8</Placa>
+    </Predavac>
+    <Predavac>
+      <Id>string</Id>
+      <Type>string</Type>
+      <Name>string</Name>
+      <Placa>23476300000000.2</Placa>
+    </Predavac>
+    <Predavac>
+      <Id>string</Id>
+      <Type>string</Type>
+      <Name>string</Name>
+      <Placa>-42131399999999.8</Placa>
+    </Predavac>
+    <Predavac>
+      <Id>string</Id>
+      <Type>string</Type>
+      <Name>string</Name>
+      <Placa>-34194899999999.8</Placa>
+    </Predavac>
+  </PredavacList>
+</PredavacArray>

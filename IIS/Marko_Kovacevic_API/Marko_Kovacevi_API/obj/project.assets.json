@@ -4811,11 +4811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marko\\Desktop\\API\\Marko_Kovacevi_API\\Marko_Kovacevi_API\\Marko_Kovacevi_API.csproj",
+      "projectUniqueName": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_API\\Marko_Kovacevi_API\\Marko_Kovacevi_API.csproj",
       "projectName": "Marko_Kovacevi_API",
-      "projectPath": "C:\\Users\\marko\\Desktop\\API\\Marko_Kovacevi_API\\Marko_Kovacevi_API\\Marko_Kovacevi_API.csproj",
+      "projectPath": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_API\\Marko_Kovacevi_API\\Marko_Kovacevi_API.csproj",
       "packagesPath": "C:\\Users\\marko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marko\\Desktop\\API\\Marko_Kovacevi_API\\Marko_Kovacevi_API\\obj\\",
+      "outputPath": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_API\\Marko_Kovacevi_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marko\\AppData\\Roaming\\NuGet\\NuGet.Config",

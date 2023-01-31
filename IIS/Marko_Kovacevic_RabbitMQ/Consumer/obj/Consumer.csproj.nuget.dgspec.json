@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marko\\Downloads\\jumpstartCS-rabbitmq-csharp-master\\1-First-RabbitMQ-App\\Consumer\\Consumer.csproj": {}
+    "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_RabbitMQ\\Consumer\\Consumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marko\\Downloads\\jumpstartCS-rabbitmq-csharp-master\\1-First-RabbitMQ-App\\Consumer\\Consumer.csproj": {
+    "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_RabbitMQ\\Consumer\\Consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marko\\Downloads\\jumpstartCS-rabbitmq-csharp-master\\1-First-RabbitMQ-App\\Consumer\\Consumer.csproj",
+        "projectUniqueName": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_RabbitMQ\\Consumer\\Consumer.csproj",
         "projectName": "Consumer",
-        "projectPath": "C:\\Users\\marko\\Downloads\\jumpstartCS-rabbitmq-csharp-master\\1-First-RabbitMQ-App\\Consumer\\Consumer.csproj",
+        "projectPath": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_RabbitMQ\\Consumer\\Consumer.csproj",
         "packagesPath": "C:\\Users\\marko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marko\\Downloads\\jumpstartCS-rabbitmq-csharp-master\\1-First-RabbitMQ-App\\Consumer\\obj\\",
+        "outputPath": "C:\\Users\\marko\\Desktop\\School\\IIS\\IIS\\Marko_Kovacevic_RabbitMQ\\Consumer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marko\\AppData\\Roaming\\NuGet\\NuGet.Config",
