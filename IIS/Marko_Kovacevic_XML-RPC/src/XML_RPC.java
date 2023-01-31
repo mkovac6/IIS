@@ -11,12 +11,32 @@ import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class XML_RPC {
     public static void main(String[] args) {
+        System.out.println("Zelite li vidjeti danasnju temperaturu u Hrvatskoj? (da | ne)");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
 
+        switch (input) {
+
+            case "da":
+                PrikaziGradove();
+                break;
+
+            case "ne":
+                System.out.println("Hvala sto ste koristili moju XML-RPC aplikaciju!");
+                break;
+                
+            default:
+                System.out.println("Greska... krivo unesen odgovor...");
+        }
+    }
+
+    private static void PrikaziGradove() {
         try {
             URL gradoviUrl = new URL("https://vrijeme.hr/hrvatska_n.xml");
             InputStream gradoviStream = gradoviUrl.openStream();
@@ -59,13 +79,12 @@ public class XML_RPC {
                 }
             }
 
-
             System.out.println("Uspjesno spojeno na DHMZ stranicu!");
+            System.out.println("Gradovi ispisani, hvala Vam na korištenju XML-RPC aplikacije!");
         } catch (Exception ex) {
             System.out.println("GRESKA, ne uspjesno spajanje na DHMZ stranicu!");
             Logger.getLogger(XML_RPC.class.getName()).
                     log(Level.SEVERE, null, ex);
         }
-
     }
 }
