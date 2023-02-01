@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Web;
 
 namespace SOAPIIS
 {
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model")]
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model")]
     public class PredavacArray
     {
         [DataMember(Order = 0)]
@@ -22,7 +19,7 @@ namespace SOAPIIS
             PredavacList = predavacList;
         }
 
-        [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model")]
+        [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model")]
         public class Predavac
         {
             public Predavac(string id, string type, string name, double placa)

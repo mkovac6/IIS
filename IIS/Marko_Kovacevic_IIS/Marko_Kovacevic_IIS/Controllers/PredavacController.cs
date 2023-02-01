@@ -1,14 +1,7 @@
 ﻿using Commons.Xml.Relaxng;
 using Marko_Kovacevic_iis.Model;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Swashbuckle.AspNetCore.SwaggerGen;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -29,7 +22,7 @@ namespace Marko_Kovacevic_iis.Controllers
                 documentXML.AppendChild(predavacArray);
 
                 XmlSchemaSet schemaSet = new XmlSchemaSet();
-                schemaSet.Add("http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model", Path.GetFullPath("predavac_schema.xsd"));
+                schemaSet.Add("http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model", Path.GetFullPath("predavac_schema.xsd"));
                 XmlReader xmlReader = new XmlNodeReader(documentXML);
                 XDocument document = XDocument.Load(xmlReader);
 
@@ -62,7 +55,6 @@ namespace Marko_Kovacevic_iis.Controllers
             }
             catch
             {
-
                 return false;
             }
         }

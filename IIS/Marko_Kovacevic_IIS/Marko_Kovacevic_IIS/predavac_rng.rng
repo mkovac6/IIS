@@ -1,0 +1,40 @@
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" ns="http://schemas.datacontract.org/2004/07/Marko_Kovacevic_IIS.Model" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+	<rng:start combine="choice">
+		<rng:ref name="PredavacArray"/>
+	</rng:start>
+	<rng:define name="PredavacArray">
+		<rng:element name="PredavacArray">
+
+
+			<rng:element name="PredavacList">
+
+
+				<rng:oneOrMore>
+					<rng:element name="Predavac">
+
+
+						<rng:element name="Id">
+							<rng:data type="string"/>
+						</rng:element>
+						<rng:element name="Type">
+							<rng:data type="string"/>
+						</rng:element>
+						<rng:element name="Name">
+							<rng:data type="string"/>
+						</rng:element>
+						<rng:element name="Placa">
+							<rng:data type="double"/>
+						</rng:element>
+
+
+					</rng:element>
+				</rng:oneOrMore>
+
+
+			</rng:element>
+
+
+		</rng:element>
+	</rng:define>
+</rng:grammar>

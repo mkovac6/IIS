@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Marko_Kovacevic_iis.Model
 {
-    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model")]
+    [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model")]
     public class PredavacArray
     {
         [DataMember(Order = 0)]
@@ -23,7 +23,7 @@ namespace Marko_Kovacevic_iis.Model
             PredavacList = predavacList;
         }
 
-        [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model")]
+        [DataContract(Namespace = "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model")]
         public class Predavac
         {
             public Predavac(string id, string type, string name, double placa)

@@ -48,7 +48,7 @@ namespace SOAPIIS
             XmlNode root = xmldoc.DocumentElement;
 
             XmlNamespaceManager manager = new XmlNamespaceManager(xmldoc.NameTable);
-            manager.AddNamespace("ns", "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model");
+            manager.AddNamespace("ns", "http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model");
 
             XmlNodeList list = root.SelectNodes("/ns:PredavacArray/ns:PredavacList/ns:Predavac[ns:Type='" + word + "']", manager);
 
@@ -56,13 +56,12 @@ namespace SOAPIIS
 
             for (int i = 0; i < list.Count; i++)
             {
-                var currentNodeXml = "<Predavac manager=\"http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis1.Model\">" + list[i].InnerXml + "</Predavac>";
+                var currentNodeXml = "<Predavac manager=\"http://schemas.datacontract.org/2004/07/Marko_Kovacevic_iis.Model\">" + list[i].InnerXml + "</Predavac>";
                 Stream ms = new MemoryStream(Encoding.UTF8.GetBytes(currentNodeXml));
 
                 DataContractSerializer ds = new DataContractSerializer(typeof(Predavac));
                 result.Add((Predavac)ds.ReadObject(ms));
             }
-
             return result;
         }
     }
