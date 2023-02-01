@@ -42,7 +42,7 @@ namespace SOAPIIS
                 dcs.WriteObject(fs, predArray);
                 fs.Close();
             }
-
+            
             XmlDocument xmldoc = new XmlDocument();
             xmldoc.Load(path);
             XmlNode root = xmldoc.DocumentElement;
